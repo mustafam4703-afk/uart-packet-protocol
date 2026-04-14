@@ -1,6 +1,7 @@
 #ifndef PACKETENCODER_H
 #define PACKETENCODER_H
 
+#include "ChecksumCalculator.h"
 #include <cstdint>
 #include <vector>
 

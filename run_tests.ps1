@@ -1,4 +1,6 @@
+clear
 cd build
+cmake ..
 cmake --build . --target tests
-.\Debug\tests.exe
+Get-ChildItem -Recurse -Filter "tests.exe" | ForEach-Object { & $_.FullName }
 cd ..
