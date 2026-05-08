@@ -17,7 +17,7 @@ std::vector<uint8_t> readBytes(size_t count) override {
     unsigned long startTime = millis();
     
     // Wait for start byte
-    while (millis() - startTime < 1000) {
+    while (millis() - startTime < 3000) {
         if (_serial.available() && _serial.peek() == 0xAA) {
             break;
         } else if (_serial.available()) {

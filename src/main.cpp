@@ -4,13 +4,12 @@
 #include "PacketDecoder.h"
 #include "RealUARTBus.h"
 
-//#define SENDER  // Comment this out on the receiver board
 enum class BoardRole {
     SENDER_BOARD,
     RECEIVER_BOARD
 };
 
-BoardRole role = BoardRole::RECEIVER_BOARD; // Change to SENDER for the sending board
+const BoardRole role = BoardRole::RECEIVER_BOARD; // Change to SENDER for the sending board
 
 const int TX_PIN = 17;
 const int RX_PIN = 18;
